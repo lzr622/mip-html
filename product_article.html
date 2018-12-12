@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html mip>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>产品中心</title>
+    <link rel="stylesheet" type="text/css" href="https://c.mipcdn.com/static/v1/mip.css">
+    <link rel="canonical" href="对应的原页面地址">
+    <style mip-custom>
+    /* 用rem  适配 */
+    @media(min-width:640px) {
+            html {
+                font-size: 20px !important
+            }
+        }
+
+        @media(min-width:480px) and (max-width:639px) {
+            html {
+                font-size: 15px !important
+            }
+        }
+
+        @media(min-width:384px) and (max-width:479px) {
+            html {
+                font-size: 12px !important
+            }
+        }
+
+        @media(min-width:320px) and (max-width:383px) {
+            html {
+                font-size: 10px !important
+            }
+        }
+
+        body {
+            margin: .5rem
+        }
+
+        p {
+            font-size: 1.4rem;
+            line-height: 1.8rem
+        }
+
+        /* 公共头部 */
+        .header {
+            margin-bottom: .15rem
+        }
+
+        .mobile-nav-list a {
+            display: block;
+            border: 0;
+            border-bottom: .05rem solid #ddd;
+            padding: 1rem 2.25rem;
+            font-size: 1.6rem
+        }
+
+        .header-flex {
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: #f7f7f8;
+            width: 100%;
+            border-bottom: 1px solid #eee;
+            padding-top: .3rem;
+            padding-bottom: .4rem;
+            z-index: 111111
+        }
+
+        .header-flex a {
+            padding-left: .5rem
+        }
+
+        .header-flex button {
+            position: absolute;
+            top: 2.6rem;
+            right: .5rem;
+            width: 1.6rem;
+            height: 1.2rem;
+            margin: auto;
+            -webkit-transition: .2s;
+            -moz-transition: .2s;
+            -ms-transition: .2s;
+            transition: .2s;
+            cursor: pointer;
+            outline: 0;
+            border: 0;
+            display: block;
+            background: #fff
+        }
+
+        .header-flex button span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: .2rem;
+            background: #666;
+            -webkit-transition: .4s;
+            -moz-transition: .4s;
+            -ms-transition: .4s;
+            transition: .4s;
+            -webkit-transform-origin: 0 0;
+            -moz-transform-origin: 0 0;
+            -ms-transform-origin: 0 0;
+            transform-origin: 0 0
+        }
+
+        .header-flex button span:nth-child(2) {
+            top: .45rem
+        }
+
+        .header-flex button span:nth-child(3) {
+            top: .9rem
+        }
+
+        mip-sidebar {
+            background: #fff
+        }
+
+        mip-sidebar .mobile-nav-list {
+            margin-top: 5rem
+        }
+
+        /* banner */
+        .banner-content {
+            margin-top: 5rem;
+        }
+
+        /* 公共底部 */
+        footer {
+            margin-top: 6rem
+        }
+
+        footer .index-footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            background: #f7f7f8;
+            width: 100%;
+            text-align: center;
+            height: 50px;
+            font-size: 1rem;
+            border-top: 1px solid #eee;
+            padding-top: .3rem;
+            padding-bottom: .4rem
+        }
+
+        footer .index-footer .index-footer2 {
+            width: 33%;
+            float: left
+        }
+
+        footer .index-footer .index-footer2 mip-img {
+            width: auto;
+            width: 28px;
+            height: 28px;
+            margin: 0 auto;
+            display: block
+        }
+
+        footer .index-footer .index-footer2 p {
+            font-size: 1.2rem
+        }
+
+        /* 内容 */
+        .index-content {
+            margin-top: 1rem;
+        }
+        .banner-content {
+            margin-top: .5rem;
+        }
+        mip-scrollbox[data-type="row"] {
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+.clear-fix{
+    clear: both;
+}
+
+.bggrey {
+            text-align: center;
+            background-color: #ddd;
+            color: #494949;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 5rem;
+            padding: 3px 0px 5px;
+        }
+        span.cgreen {
+    color: #00cc99
+}
+    
+    .fir {
+        padding-top: 20px;
+        padding-bottom: 20px
+    }
+
+.fir .intr .title {
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.fir .intr .content {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    
+}
+
+.fir .intr .content p {
+    padding: 5px 0px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+
+.fir .intr .lne-big .zixun1 {
+    padding-left: 0px;
+    height: 30px;
+    width: 48%;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.fir .intr .lne-big .zixun1 .litoude {
+    padding: 7px;
+    background-color: #00cc99;
+    text-align: center;
+    color: #ffffff
+}
+
+
+.fir .intr .lne-big .zixun1 .litoude span {
+    line-height: 24px
+}
+
+.fir .intr .lne-big .zixun2 {
+    height: 30px;
+    padding-right: 0px;
+    width: 48%;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+
+
+.fir .intr .lne-big .zixun2 .litoude {
+    padding: 6px;
+    border: 1px solid #00cc99;
+    text-align: center
+}
+
+
+
+.fir .intr .lne-big .zixun2 .litoude span {
+    color: #00cc99;
+    line-height: 24px
+}
+.mip-layout-fixed{
+    margin-bottom: -4px;
+}
+
+.sec {
+    margin-bottom: 30px
+}
+
+.sec .container .line-big .title {
+    color: #333333;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.sec .container .line-big .s_1 {
+    margin-bottom: 20px
+}
+
+.sec .container .line-big .s_1 p {
+    margin-top: 9px;
+    margin-bottom: 9px
+}
+
+
+
+.sec .container .line-big .s_2 {
+    margin-bottom: 20px
+}
+
+.sec .container .line-big .s_2 p {
+    margin-top: 9px;
+    margin-bottom: 9px
+}
+
+
+.sec .container .line-big .s_3 {
+    margin-top: 20px;
+    margin-bottom: 30px
+}
+
+
+    .sec .container .line-big .s_3 {
+        margin-top: 20px;
+        margin-bottom: 0px
+    }
+
+
+.sec .container .line-big .title4 {
+    color: #333333;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+    .sec .container .line-big .title4 {
+        margin-top: 20px
+    }
+
+
+.sec .container .line-big .s_4 {
+    margin-top: 0px;
+    margin-bottom: 20px
+}
+
+.sec .container .line-big .s_4 p {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+.canshu {
+    width:100%;
+    display: inline;
+    white-space: nowrap;/*规定段落中的文本不进行换行*/
+    overflow-x:scroll;/*水平方向，超出部分添加滚动机制*/
+    float:left;/*一定要设置左侧浮动*/
+    overflow-y:hidden/*竖直方向，超出部分隐藏*/
+
+}
+    </style>
+</head>
+<body>
+<!-- 正文 -->
+<div class="header">
+    <div class="header-inner">
+        <div class="header-flex">
+            <a href="index.html" data-type="mip">
+                <mip-img layout="fixed" width="12.5rem" height="3.5rem" src="img/logo.png" alt="MIP LOGO"></mip-img>
+            </a>
+            <button class="header-mobile-nav-toggle" on="tap:right-sidebar.open" role="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</div>
+<mip-sidebar id="right-sidebar" layout="nodisplay" class="mip-layout-nodisplay mip-element" side="right">
+    <div class="right-sidebar-nav">
+        <ul class="mobile-nav-list">
+            <li><a data-type="mip" data-title="首页" href="index.html">首页</a></li>
+            <li><a data-type="mip" data-title="产品中心" href="product.html">产品中心</a></li>
+            <li><a data-type="mip" data-title="新闻中心" href="news.html">新闻中心</a></li>
+        </ul>
+    </div>
+</mip-sidebar>
+<!-- /header -->
+<div class="bggrey">产品中心</div>
+    <!--图片组件-->
+    <div class="banner-content">
+        <mip-carousel layout="responsive" width="530" height="187" indicator buttonController autoplay>
+            <mip-img src="img/product/banner.jpg" alt="banner"></mip-img>
+            <mip-img src="img/product/banner.jpg" alt="banner"></mip-img>
+        </mip-carousel>
+    </div>
+
+
+    <div class="fir">
+        <div class="container">
+            <div class="line-big">
+                <div class="pic">
+                    <img src="./img/product_inside/fir_1.png" alt="" class="img-tran">
+                </div>
+                <div class="intr">
+                    <div class="title">
+                            立式辊磨机(中速磨煤机、矿渣立磨)
+                    </div>
+                    <div class="content">
+                        <p><span class="cgreen">产品简介：</span>LM立式辊磨机是成熟的立磨技术、国外成功经验和我公司技术创新升级完美结合的一款高效节能型磨机设备。它集破碎、干燥、粉磨、分级、输送于一体，可广泛应用于水泥、电力、冶金、化工、非金属矿等行业，并专注于非金属矿、煤粉和矿渣三大领域。</p> 
+                        <p><span class="cgreen">应用范围：</span>砂石料场、混凝土搅拌站、干粉砂浆、电厂脱硫、石英砂等</p>
+                        <p><span class="cgreen">物&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;料：</span>河卵石、花岗岩、玄武岩、石英石、铁矿石、辉绿岩、石灰石、方解石、白云石、重晶石、滑石、石膏、膨润土等。</p>
+                    </div>
+                    <div class="lne-big">
+                        <a href=""><div class="zixun1">
+                                <div class="litoude">
+                                    <mip-img layout="fixed" width="1.5rem" height="1.5rem" src="./img/product_inside/zixun.png"></mip-img>&nbsp;&nbsp;&nbsp;<span>立即询价</span>
+                                </div>
+                            </div></a> 
+                            <a href=""><div class="zixun2">
+                                    <div class="litoude">
+                                        <mip-img layout="fixed" width="1.5rem" height="1.5rem" src="./img/product_inside/dianhua.png"></mip-img>&nbsp;&nbsp;&nbsp;<span>400-655-1888</span>
+                                </div>
+                            </div></a>
+                            <div class="clear-fix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec">
+        <div class="container">
+            <div class="line-big">
+                <div class="title">
+                        <mip-img layout="fixed" width="1.8rem" height="1.8rem" src="./img/product_inside/sanjiao.png"></mip-img>&nbsp;&nbsp;&nbsp;产品优势</div>
+                <div class="s_1">
+                        <p><span class="cgreen">投资费用低。</span>由于集破碎、干燥、粉磨、分级输送于一体，系统简单，布局紧凑，占地面积约为球磨系统的50%，而且可露天布置，因此能大量降低投资费用。</p>
+                        <p><span class="cgreen">运行成本低。</span>（1）效率高：磨辊在磨盘上直接碾压磨碎物料，能耗低，和球磨系统相比节约能耗30%～40%。（2）磨损少：工作中磨辊并不与磨盘直接接触，且磨辊与衬板采用优质材料制作，因此使用寿命长，磨损少。</p> 
+                        <p><span class="cgreen">烘干效率高。</span>由外部通入到磨机内的热风，在磨内直接、多次与粉状物料充分接触，烘干能力强，可为磨机系统节省一台烘干机，节约能源，通过调节热风温度，能满足不同湿度物料要求。</p>
+                        <p><span class="cgreen">操作维修简便。</span>（1）装备有自动控制系统，可实现远程控制，操作简便。（2）装备有防止辊套和磨盘衬板直接接触的限位装置，避免了破坏性冲击和剧烈震动。（3）通过检修油缸，翻转动臂，更换辊套、衬板，方便快捷，减少停机损失。</p>
+                        <p><span class="cgreen">产品质量稳定。</span>（1）由于物料在磨内停留时间短，易于检测和控制产品粒度及化学成分，减少重复碾磨，稳定产品质量。（2）产品中含铁量极少，且所含机械磨损铁易于去除，用于粉磨白色或透明物料时，产品的白度和净度高。
+                            环保清洁。震动小，噪音低，且设备整体密封，系统在负压下工作，无粉尘外溢，环境清洁，满足国家环保要求。</p>
+                        
+                        
+                        
+                </div>
+                <div class="title"><mip-img layout="fixed" width="1.8rem" height="1.8rem" src="./img/product_inside/sanjiao.png"></mip-img>&nbsp;&nbsp;&nbsp;工作原理</div>
+                <div class="s_2">
+                    <p>LM系列立式磨粉机主要由磨辊总成、磨盘总成、液压站、传动臂总成、选粉机、主减速机、电动机、机体、主减速机润滑站、液压站、PLC电控柜等部分组成。</p>
+                    <p>工作时，主电机通过减速机带动磨盘转动，同时热风从进风口进入立磨机体内，物料从下料口落在磨盘中央，在离心力的作用下，物料从磨盘中央向边缘均匀移动，经过磨盘上的粉磨辊道区域时，受到磨辊的碾压，大块物料直接被压碎，细粒物料受挤压后形成料床进行粒间粉碎。被粉碎的物料继续向磨盘边缘移动，直到被风环处的强气流带走，而较大的颗粒物料又重新掉落到磨盘上继续粉碎，气流中的物料经过上部的分离器时，在转子叶片的作用下，粗颗粒重新回到磨盘上粉磨，合格的细粉随气流一起出磨，被系统的集粉器收集，被收集到的粉料即为立磨磨出的产品。混入物料的铁块等杂物随物料运动到磨盘边缘时，由于自身重量大而不能被风吹起，跌落至磨机下腔被安装在磨盘底部的刮料板刮入排渣口排出机外。</p>
+                </div>
+                <div class="title"><mip-img layout="fixed" width="1.8rem" height="1.8rem" src="./img/product_inside/sanjiao.png"></mip-img>&nbsp;&nbsp;&nbsp;相关案例</div>
+                <div class="s_3">
+                    <img src="./img/product_inside/thir_1.jpg" alt="" class="img-tran">
+                </div>
+                <div class="s_3"><img src="./img/product_inside/thir_2.jpg" alt="" class="img-tran"></div>
+                <div class="clearfix"></div>
+                <div class="title4"><mip-img layout="fixed" width="1.8rem" height="1.8rem" src="./img/product_inside/sanjiao.png"></mip-img>&nbsp;&nbsp;&nbsp;技术参数</div>
+                <div class="s_4">
+                    <p>LM型立式辊磨机基本技术参数（非金属矿行业）</p>
+                    <div class="canshu">
+                        <mip-img width="1172" height="294" layout="fixed" src="./img/product_inside/thir_3.jpg"></mip-img>
+                    </div>
+                    <p>注：技术参数如有变动，恕不另行通知。Any change of technical data shall not be advised additionally.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+            <div class="index-footer">
+                <div class="index-footer2">
+                    <a href="index.html">
+                        <mip-img src="img/1.png" width="" height="" alt="">
+                        </mip-img>
+                        <p>首页</p>
+                    </a>
+                </div>
+                <div class="index-footer2">
+                    <a href="product.html">
+                        <mip-img src="img/2.png" width="" height="" alt="">
+        
+                        </mip-img>
+                        <p>产品中心</p>
+                    </a>
+                </div>
+                <div class="index-footer2">
+                    <a href="news.html">
+                        <mip-img src="img/3.png" width="" height="" alt="">
+        
+                        </mip-img>
+                        <p>新闻中心</p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+<script src="https://c.mipcdn.com/static/v1/mip.js"></script>
+    <script src="https://c.mipcdn.com/static/v1/mip-sidebar/mip-sidebar.js"></script>
+
+</body>
+</html>

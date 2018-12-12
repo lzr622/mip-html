@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html mip>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>新闻中心</title>
+    <link rel="stylesheet" type="text/css" href="https://c.mipcdn.com/static/v1/mip.css">
+    <link rel="canonical" href="对应的原页面地址">
+    <style mip-custom>
+    /* 用rem  适配 */
+    @media(min-width:640px) {
+            html {
+                font-size: 20px !important
+            }
+        }
+
+        @media(min-width:480px) and (max-width:639px) {
+            html {
+                font-size: 15px !important
+            }
+        }
+
+        @media(min-width:384px) and (max-width:479px) {
+            html {
+                font-size: 12px !important
+            }
+        }
+
+        @media(min-width:320px) and (max-width:383px) {
+            html {
+                font-size: 10px !important
+            }
+        }
+
+        body {
+            margin: .5rem
+        }
+
+        p {
+            font-size: 1.4rem;
+            line-height: 1.8rem
+        }
+
+        /* 公共头部 */
+        .header {
+            margin-bottom: .15rem
+        }
+
+        .mobile-nav-list a {
+            display: block;
+            border: 0;
+            border-bottom: .05rem solid #ddd;
+            padding: 1rem 2.25rem;
+            font-size: 1.6rem
+        }
+
+        .header-flex {
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: #f7f7f8;
+            width: 100%;
+            border-bottom: 1px solid #eee;
+            padding-top: .3rem;
+            padding-bottom: .4rem;
+            z-index: 111111
+        }
+
+        .header-flex a {
+            padding-left: .5rem
+        }
+
+        .header-flex button {
+            position: absolute;
+            top: 2.6rem;
+            right: .5rem;
+            width: 1.6rem;
+            height: 1.2rem;
+            margin: auto;
+            -webkit-transition: .2s;
+            -moz-transition: .2s;
+            -ms-transition: .2s;
+            transition: .2s;
+            cursor: pointer;
+            outline: 0;
+            border: 0;
+            display: block;
+            background: #fff
+        }
+
+        .header-flex button span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: .2rem;
+            background: #666;
+            -webkit-transition: .4s;
+            -moz-transition: .4s;
+            -ms-transition: .4s;
+            transition: .4s;
+            -webkit-transform-origin: 0 0;
+            -moz-transform-origin: 0 0;
+            -ms-transform-origin: 0 0;
+            transform-origin: 0 0
+        }
+
+        .header-flex button span:nth-child(2) {
+            top: .45rem
+        }
+
+        .header-flex button span:nth-child(3) {
+            top: .9rem
+        }
+
+        mip-sidebar {
+            background: #fff
+        }
+
+        mip-sidebar .mobile-nav-list {
+            margin-top: 5rem
+        }
+
+        /* banner */
+        .banner-content {
+            margin-top: 5rem;
+        }
+
+        /* 公共底部 */
+        footer {
+            margin-top: 6rem
+        }
+
+        footer .index-footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            background: #f7f7f8;
+            width: 100%;
+            text-align: center;
+            height: 50px;
+            font-size: 1rem;
+            border-top: 1px solid #eee;
+            padding-top: .3rem;
+            padding-bottom: .4rem
+        }
+
+        footer .index-footer .index-footer2 {
+            width: 33%;
+            float: left
+        }
+
+        footer .index-footer .index-footer2 mip-img {
+            width: auto;
+            width: 28px;
+            height: 28px;
+            margin: 0 auto;
+            display: block
+        }
+
+        footer .index-footer .index-footer2 p {
+            font-size: 1.2rem
+        }
+
+        /* 内容 */
+        .index-content {
+            margin-top: 1rem;
+        }
+        .banner-content {
+            margin-top: .5rem;
+        }
+        mip-scrollbox[data-type="row"] {
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+.clear-fix{
+    clear: both;
+}
+
+.bggrey {
+            text-align: center;
+            background-color: #ddd;
+            color: #494949;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 5rem;
+            padding: 3px 0px 5px;
+        }
+        span.cgreen {
+    color: #00cc99
+}
+    
+.fir .container .line-big a .pic {
+        margin: 20px 0px 10px;
+        text-align: center;
+    }
+
+    .fir .container .line-big a .title {
+        padding: 0px 15px 25px
+    }
+    .fir .container .line-big a .title {
+    border-bottom: 1px dashed #c1c1c1
+}
+.fir .container .line-big a .title .neit {
+    margin-bottom: 15px;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 700
+}
+
+.fir .container .line-big a .title .nc {
+    color: #646464
+}
+    </style>
+</head>
+<body>
+<!-- 正文 -->
+<div class="header">
+    <div class="header-inner">
+        <div class="header-flex">
+            <a href="index.html" data-type="mip">
+                <mip-img layout="fixed" width="12.5rem" height="3.5rem" src="img/logo.png" alt="MIP LOGO"></mip-img>
+            </a>
+            <button class="header-mobile-nav-toggle" on="tap:right-sidebar.open" role="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</div>
+<mip-sidebar id="right-sidebar" layout="nodisplay" class="mip-layout-nodisplay mip-element" side="right">
+    <div class="right-sidebar-nav">
+        <ul class="mobile-nav-list">
+            <li><a data-type="mip" data-title="首页" href="index.html">首页</a></li>
+            <li><a data-type="mip" data-title="产品中心" href="product.html">产品中心</a></li>
+            <li><a data-type="mip" data-title="新闻中心" href="news.html">新闻中心</a></li>
+        </ul>
+    </div>
+</mip-sidebar>
+<!-- /header -->
+<div class="bggrey">新闻中心</div>
+    <!--图片组件-->
+    <div class="banner-content">
+        <mip-carousel layout="responsive" width="500" height="187" indicator buttonController autoplay>
+            <mip-img src="img/news/banner.jpg" alt="banner"></mip-img>
+            <mip-img src="img/news/banner.jpg" alt="banner"></mip-img>
+        </mip-carousel>
+    </div>
+
+    <div class="fir">
+            <div class="container">
+                <div class="line-big">
+                    <a href="./news_article.html"> <div class="pic">
+                            <mip-img src="img/news/fir_1.jpg" width="170" height="110" layout="fixed">
+                            </mip-img>
+                    </div>
+                    <div class="title">
+                        <div class="neit">哪里生产钢铁厂铸造煤粉的立式磨煤机?年盈利3000万煤粉项目</div>
+                        <p class="nc">工业绿动力”是目前城市发展计划推行的高潮，各个地区掀起了大产能煤粉制备热潮，并逐渐形成完整的煤炭清洗、煤粉制备、物流配送、锅炉改造等产业链，实现社会经济绿色低碳的可持续发展。煤粉制备中心年产量不得低于100万吨的指标，对加工装备和生产流程发出很大的挑战...</p>
+                    </div></a>
+        
+                    <a href="./news_article.html"><div class="pic">
+                            <mip-img src="img/news/fir_2.jpg" width="170" height="110" layout="fixed">
+                            </mip-img>
+                        </div>
+                        <div class="title">
+                                <div class="neit">20万吨/年高炉喷吹煤粉加工立式磨煤机多少钱?</div>
+                                <p class="nc">20万吨/年高炉喷吹煤粉加工立式磨煤机多少钱?对于年产20万吨的生产线，黎明重工在国内外有多个类似客户生产案例。其中以武安钢厂煤粉制备系统为例，加工物料为烟煤，出料粒度在200目，单台机时产18-22吨/时...</p>
+                        </div></a> 
+        
+                    <a href="./news_article.html"><div class="pic">
+                            <mip-img src="img/news/fir_3.jpg" width="170" height="110" layout="fixed">
+                            </mip-img>
+                        </div>
+                        <div class="title">
+                                <div class="neit">生产60至100目石粉使用哪种型号雷蒙磨粉机?</div>
+                                <p class="nc">生产60至100目石粉使用哪种型号雷蒙磨粉机?黎明重工生产多种型号规格磨粉机，可以加工0-80目粗粉，80-400目细粉、400-1200目超细粉、1200-2500目微粉。其型号规格涉及到10余种，可以满足客户不同领域石粉生产要求...</p>
+                        </div></a>
+        
+                    <a href="./news_article.html"><div class="pic">
+                            <mip-img src="img/news/fir_4.jpg" width="170" height="110" layout="fixed">
+                            </mip-img>
+                        </div>
+                        <div class="title">
+                                <div class="neit">投资年产20万吨脱硫石灰石粉技改项目用哪种型号磨粉机?</div>
+                                <p class="nc">投资年产20万吨脱硫石灰石粉技改项目用哪种型号磨粉机?电厂脱硫比较常采用湿法烟气脱硫工艺，石灰石经过破碎、磨粉后与水混合搅拌制成吸浆液，与二氧化硫反应后，除去烟气中部分污染物，最终反应产物为石膏...</p>
+                        </div></a>
+        
+                    <a href="./news_article.html"><div class="pic">
+                            <mip-img src="img/news/fir_5.jpg" width="170" height="110" layout="fixed">
+                            </mip-img>
+                        </div>
+                        <div class="title">
+                                <div class="neit">45万吨矿渣微粉立磨生产厂家 矿渣立式磨粉机多少钱一台?</div>
+                                <p class="nc">5万吨矿渣微粉立磨生产厂家 矿渣立式磨粉机多少钱一台?在矿渣制作矿渣粉的过程中，很多客户会选择立式磨粉机，其功能强大、性能优良，并且集破碎、干燥、粉磨、筛分输送于一体，系统简单，布局紧凑，占地面积约为球磨系统的一半，可以露天布置，很大程度上降低了投资费用...</p>
+                        </div></a>
+        
+                    <a href="./news_article.html"><div class="pic">
+                            <mip-img src="img/news/fir_6.jpg" width="170" height="110" layout="fixed">
+                            </mip-img>
+                        </div>
+                        <div class="title">
+                                <div class="neit">年产30万吨石膏粉生产项目加工磨粉机生产厂家</div>
+                                <p class="nc">年产30万吨石膏粉生产项目加工磨粉机生产厂家，我国天然石膏矿产资源储量丰富，建筑、建材、电厂脱硫等需要数量巨大的石膏粉，石膏粉加工成为众多投资者青睐的香饽饽...</p>
+                        </div></a>
+        
+                    <a href="./news_article.html"><div class="pic">
+                            <mip-img src="img/news/fir_7.jpg" width="170" height="110" layout="fixed">
+                            </mip-img>
+                        </div>
+                        <div class="title">
+                                <div class="neit">时产20吨膨润土磨粉生产线需要多少钱?5R雷蒙磨生产厂家</div>
+                                <p class="nc">时产20吨膨润土磨粉生产线多少钱?5R雷蒙磨生产厂家。膨润土属于质地较软的非金属矿，如果原矿尺寸过大，磨机进料口有限制，可进行初步破碎后，再送入磨粉机进行粉磨加工，选出符合细度的成品粉...</p>
+                        </div></a>
+                </div>
+            </div>
+        </div>
+
+    
+
+<footer>
+    <div class="index-footer">
+        <div class="index-footer2">
+            <a href="index.html">
+                <mip-img src="img/1.png" width="" height="" alt="">
+                </mip-img>
+                <p>首页</p>
+            </a>
+        </div>
+        <div class="index-footer2">
+            <a href="product.html">
+                <mip-img src="img/2.png" width="" height="" alt="">
+
+                </mip-img>
+                <p>产品中心</p>
+            </a>
+        </div>
+        <div class="index-footer2">
+            <a href="news.html">
+                <mip-img src="img/3.png" width="" height="" alt="">
+
+                </mip-img>
+                <p>新闻中心</p>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://c.mipcdn.com/static/v1/mip.js"></script>
+    <script src="https://c.mipcdn.com/static/v1/mip-sidebar/mip-sidebar.js"></script>
+
+</body>
+</html>
