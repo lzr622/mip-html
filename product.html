@@ -34,9 +34,7 @@
             }
         }
 
-        body {
-            margin: .5rem
-        }
+        
 
         p {
             font-size: 1.4rem;
@@ -74,7 +72,7 @@
 
         .header-flex button {
             position: absolute;
-            top: 2.6rem;
+            top: 2rem;
             right: .5rem;
             width: 1.6rem;
             height: 1.2rem;
@@ -124,8 +122,10 @@
         }
 
         /* banner */
-        .banner-content {
-            margin-top: .5rem;
+        .banner-content{
+            margin-left: -.5rem;
+            margin-right: -.5rem;
+            margin-top: 4.5rem;
         }
 
         /* 公共底部 */
@@ -215,6 +215,11 @@
             padding: 8px 10px;
             font-size: 16px;
             text-align: center;
+            border-bottom: 2px solid #fff;
+        }
+        .sec-assoc .arrow-img{
+            margin-top: 2px;
+            float:right;
         }
         .scroll{
             margin-top: 10px;
@@ -258,11 +263,10 @@
         </div>
     </mip-sidebar>
     <!-- /header -->
-    <div class="bggrey">产品中心</div>
     <!--图片组件-->
     <div class="banner-content">
         <mip-carousel layout="responsive" width="530" height="187" indicator buttonController autoplay>
-            <mip-img src="img/product/banner.jpg" alt="banner">this is a xiangxijieshao</mip-img>
+            <mip-img src="img/product/banner.jpg" alt="banner"></mip-img>
             <mip-img src="img/product/banner.jpg" alt="banner"></mip-img>
         </mip-carousel>
     </div>
@@ -358,7 +362,9 @@
 
 <mip-accordion sessions-key="mip_1" animatetime='0.24' type="manual">
     <section  expanded="open">
-        <h4 class="sec-assoc">固定式破碎机</h4>
+        <h4 class="sec-assoc">固定式破碎机
+            <mip-img src="./img/down-arrow.jpg" layout="fixed" width="24" height="20" class="arrow-img"></mip-img>
+        </h4>
         <mip-scrollbox data-type="row" class="demo1 scroll">
         <div data-wrapper>
             <div data-inner>
@@ -397,7 +403,9 @@
         </mip-scrollbox>
     </section>
     <section>
-        <h4 class="sec-assoc">工业制砂设备</h4>
+        <h4 class="sec-assoc">工业制砂设备
+            <mip-img src="./img/down-arrow.jpg" layout="fixed" width="24" height="20" class="arrow-img"></mip-img>
+        </h4>
         <mip-scrollbox data-type="row" class="demo2 scroll">
             <div data-wrapper>
                 <div data-inner>
@@ -436,7 +444,9 @@
             </mip-scrollbox>
     </section>
     <section>
-        <h4 class="sec-assoc">移动破碎站</h4>
+        <h4 class="sec-assoc">移动破碎站 
+            <mip-img src="./img/down-arrow.jpg" layout="fixed" width="24" height="20" class="arrow-img"></mip-img>
+        </h4>
         <mip-scrollbox data-type="row" class="demo3 scroll">
             <div data-wrapper>
                 <div data-inner>

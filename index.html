@@ -36,6 +36,11 @@
         body {
             margin: .5rem
         }
+        .banner-content{
+            margin-left: -.5rem;
+            margin-right: -.5rem;
+            margin-top: 4.5rem;
+        }
 
         p {
             font-size: 1.4rem;
@@ -73,7 +78,7 @@
 
         .header-flex button {
             position: absolute;
-            top: 2.6rem;
+            top: 2rem;
             right: .5rem;
             width: 1.6rem;
             height: 1.2rem;
@@ -123,9 +128,6 @@
         }
 
         /* banner */
-        .banner-content {
-            margin-top: 5rem;
-        }
 
         /* 公共底部 */
         footer {
@@ -172,9 +174,11 @@
             padding-left: 3px;
             padding-right: 3px;
         }
-.clear-fix{
-    clear: both;
-}
+
+        .clear-fix {
+            clear: both;
+        }
+
         .item-content {
             border: 1px solid #d7d7d7;
             padding: 10px 10px 15px
@@ -202,10 +206,17 @@
             margin: 20px auto 15px;
         }
 
+        .sec-title2 {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin: 0px auto 15px;
+        }
+
         .secpro {
             margin: 10px;
             text-align: center;
-
+            font-weight: bold;
         }
 
         .thir-left {
@@ -227,56 +238,85 @@
             line-height: 30px;
             color: #dedede
         }
-        .thir-right{
+
+        .thir-right {
             margin-top: .2rem;
         }
-        .thir-right .little{
+
+        .thir-right .little {
             float: left;
             width: 50%;
             box-sizing: border-box;
             padding-left: 10px;
             padding-right: 10px;
             margin-bottom: 10px
+        }
+
+        .thir-right .little .img-tran {
+            border: 2px solid #00cc99;
+            border-radius: 100px
+        }
+
+        .thir-right .little .jieshao {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 16px;
+            color: #494949;
+            font-weight: bold;
+        }
+
+        .thir-right .little .jieshao span {
+            color: #00cc99;
+            font-size: 14px;
+            line-height: 30px;
+        }
+
+        .four {
+            margin-top: 20px;
+        }
+
+        .four .all-title {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #333333
+        }
+
+        .four .four-little {
+            text-align: center;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .four .four-little .title {
+            margin-top: 5px
+        }
+
+        .four .title {
+            font-size: 14px;
+        }
+
+        .four .title {
+            margin: 0;
+            padding: 0.5rem;
+            color: white;
+            font-weight: bold;
+            text-align: left;
+            z-index: 2;
+            position: absolute;
+            background-color: rgba(0, 0, 0, .7);
+            bottom: 0px;
+            width: 97%;
+        }
+        .n-list{
+            line-height: 30px;
+            font-size: 16px;
+            list-style-type: square;
+            padding-left: 15px;
 
         }
-        .thir-right .little .img-tran {
-    border: 2px solid #00cc99;
-    border-radius: 100px
-}
-.thir-right .little .jieshao {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 16px;
-    color: #494949;
-    font-weight: bold;
-}
-.thir-right .little .jieshao span {
-    color: #00cc99;
-    font-size: 14px
-}
-.four{
-    margin-top: 20px;
-}
-.four .all-title {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #333333
-}
-
-.four .four-little {
-    text-align: center;
-    margin-bottom: 10px
-}
-.four .four-little .title {
-    margin-top: 5px
-}
-
-.four .title {
-    font-size: 14px;
-}
     </style>
     <!-- noscript 标签是为了在不支持 script 的环境下快速的展现 MIP 页面，推荐使用 -->
     <noscript>
@@ -320,19 +360,57 @@
     <!--图片组件-->
     <div class="banner-content">
         <mip-carousel layout="responsive" width="770" height="448" indicator buttonController autoplay>
-            <mip-img src="img/index/banner_s.jpg" alt="banner">this is a xiangxijieshao</mip-img>
+            <mip-img src="img/index/banner_s.jpg" alt="banner"></mip-img>
             <mip-img src="img/index/banner_s.jpg" alt="banner"></mip-img>
         </mip-carousel>
     </div>
 
+    <mip-scrollbox data-type="row" class="demo6">
+        <h3 class="sec-title">热销产品</h3>
+        <div data-wrapper>
+            <div data-inner>
+                <div data-scroller>
+                    <a data-type="mip" data-title="产品详情页" href="product_article.html">
+                        <div data-item data-col="7">
+                            <mip-img src="./img/index/sec_1.jpg" width="270" height="250" layout="responsive">
+                            </mip-img>
+                            <p class="secpro">LM立式磨粉机</p>
+                        </div>
+                    </a>
+                    <a data-type="mip" data-title="产品详情页" href="product_article.html">
+                        <div data-item data-col="7">
+                            <mip-img src="./img/index/sec_2.jpg" width="270" height="250" layout="responsive">
+                            </mip-img>
+                            <p class="secpro">MTW重型欧版磨</p>
+                        </div>
+                    </a>
+                    <a data-type="mip" data-title="产品详情页" href="product_article.html">
+                        <div data-item data-col="7">
+                            <mip-img src="./img/index/sec_3.jpg" width="270" height="250" layout="responsive">
+                            </mip-img>
+                            <p class="secpro">MW微粉磨</p>
+                        </div>
+                    </a>
+                    <a data-type="mip" data-title="产品详情页" href="product_article.html">
+                        <div data-item data-col="7">
+                            <mip-img src="./img/index/sec_41.jpg" width="270" height="250" layout="responsive">
+                            </mip-img>
+                            <p class="secpro">LUM超细立磨</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </mip-scrollbox>
 
     <div class="index-content">
         <mip-scrollbox data-type="row" class="demo5">
+            <h3 class="sec-title2">案例现场</h3>
             <div data-wrapper>
                 <div data-inner>
                     <div data-scroller>
                         <a data-type="mip" data-title="产品详情页" href="product_article.html">
-                            <div data-item data-col="6">
+                            <div data-item data-col="7">
                                 <mip-img src="img/index/fir_1.jpg" width="300" height="200" layout="responsive">
                                 </mip-img>
                                 <div class="item-content">
@@ -344,7 +422,7 @@
                             </div>
                         </a>
                         <a data-type="mip" data-title="产品详情页" href="product_article.html">
-                            <div data-item data-col="6">
+                            <div data-item data-col="7">
                                 <mip-img src="img/index/fir_2.jpg" width="300" height="200" layout="responsive">
                                 </mip-img>
                                 <div class="item-content">
@@ -358,7 +436,7 @@
                             </div>
                         </a>
                         <a data-type="mip" data-title="产品详情页" href="product_article.html">
-                            <div data-item data-col="6">
+                            <div data-item data-col="7">
                                 <mip-img src="img/index/fir_3.jpg" width="300" height="200" layout="responsive">
                                 </mip-img>
                                 <div class="item-content">
@@ -372,7 +450,7 @@
                             </div>
                         </a>
                         <a data-type="mip" data-title="产品详情页" href="product_article.html">
-                            <div data-item data-col="6">
+                            <div data-item data-col="7">
                                 <mip-img src="img/index/fir_4.jpg" width="300" height="200" layout="responsive">
                                 </mip-img>
                                 <div class="item-content">
@@ -388,43 +466,7 @@
             </div>
         </mip-scrollbox>
 
-        <mip-scrollbox data-type="row" class="demo6">
-            <h3 class="sec-title">热销产品</h3>
-            <div data-wrapper>
-                <div data-inner>
-                    <div data-scroller>
-                        <a data-type="mip" data-title="产品详情页" href="product_article.html">
-                            <div data-item data-col="6">
-                                <mip-img src="./img/index/sec_1.jpg" width="270" height="250" layout="responsive">
-                                </mip-img>
-                                <p class="secpro">LM立式磨粉机</p>
-                            </div>
-                        </a>
-                        <a data-type="mip" data-title="产品详情页" href="product_article.html">
-                            <div data-item data-col="6">
-                                <mip-img src="./img/index/sec_2.jpg" width="270" height="250" layout="responsive">
-                                </mip-img>
-                                <p class="secpro">MTW重型欧版磨</p>
-                            </div>
-                        </a>
-                        <a data-type="mip" data-title="产品详情页" href="product_article.html">
-                            <div data-item data-col="6">
-                                <mip-img src="./img/index/sec_3.jpg" width="270" height="250" layout="responsive">
-                                </mip-img>
-                                <p class="secpro">MW微粉磨</p>
-                            </div>
-                        </a>
-                        <a data-type="mip" data-title="产品详情页" href="product_article.html">
-                            <div data-item data-col="6">
-                                <mip-img src="./img/index/sec_41.jpg" width="270" height="250" layout="responsive">
-                                </mip-img>
-                                <p class="secpro">LUM超细立磨</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </mip-scrollbox>
+
 
         <div class="thir-left">
             <div class="title">选择我们的理由</div>
@@ -450,30 +492,39 @@
                 <div class="jieshao">产品种类<br><span class="jishil">30</span><span>余种</span></div>
             </div>
         </div>
-<div class="clear-fix"></div>
+        <div class="clear-fix"></div>
 
         <div class="four">
             <div class="all-title">新闻中心</div>
             <div class="container">
                 <div class="line-big">
-                    <a href="./news_article.html"><div class="four-little">
-                            <img src="./img/index/sec_4.jpg" alt="" class="img-tran">
-                            <div class="title">全国砂石骨料行业创新大会顺利举办 传递重要行业...</div>
-                        </div></a> 
-                    <a href="./news_article.html"><div class="four-little">
+                    <a href="./news_article.html">
+                        <div class="four-little">
                             <img src="./img/index/sec_5.jpg" alt="" class="img-tran">
-                        <div class="title">献礼红色七月 黎明重工开展党员系列活动...</div>
-                    </div></a>
-                    <a href="./news_article.html"><div class="four-little">
-                            <img src="./img/index/sec_6.jpg" alt="" class="img-tran">
-                            <div class="title">河南黎明重工科技股份有限公司年产 150 套电力...</div></a>
-                    </div>
+                            <div class="title">献礼红色七月 黎明重工开展党员系列活动...</div>
+                        </div>
+                    </a>
+                    <ul class="n-list">
+                        <a href="./news_article.html">
+                            <li class="n-xx">献礼红色七月 黎明重工开展党员系列活动...</li>
+                        </a>
+                        <a href="./news_article.html">
+                            <li class="n-xx">献礼红色七月 黎明重工开展党员系列活动...</li>
+                        </a>
+                        <a href="./news_article.html">
+                            <li class="n-xx">献礼红色七月 黎明重工开展党员系列活动...</li>
+                        </a>
+                        <a href="./news_article.html">
+                            <li class="n-xx">献礼红色七月 黎明重工开展党员系列活动...</li>
+                        </a>
+                    </ul>
+
                 </div>
+            </div>
+
+
         </div>
-
-
-    </div>
-    <footer>
+        <footer>
             <div class="index-footer">
                 <div class="index-footer2">
                     <a href="index.html">
@@ -485,7 +536,7 @@
                 <div class="index-footer2">
                     <a href="product.html">
                         <mip-img src="img/2.png" width="" height="" alt="">
-        
+
                         </mip-img>
                         <p>产品中心</p>
                     </a>
@@ -493,7 +544,7 @@
                 <div class="index-footer2">
                     <a href="news.html">
                         <mip-img src="img/3.png" width="" height="" alt="">
-        
+
                         </mip-img>
                         <p>新闻中心</p>
                     </a>
@@ -503,12 +554,12 @@
 
 
 
-    <!--mip 运行环境-->
-    <script src="https://c.mipcdn.com/static/v1/mip.js"></script>
-    <script src="https://c.mipcdn.com/static/v1/mip-sidebar/mip-sidebar.js"></script>
-    <script src="https://c.mipcdn.com/static/v1/mip-scrollbox/mip-scrollbox.js"></script>
+        <!--mip 运行环境-->
+        <script src="https://c.mipcdn.com/static/v1/mip.js"></script>
+        <script src="https://c.mipcdn.com/static/v1/mip-sidebar/mip-sidebar.js"></script>
+        <script src="https://c.mipcdn.com/static/v1/mip-scrollbox/mip-scrollbox.js"></script>
 
-    <!-- <script language="javascript" src="https://pqt.zoosnet.net/js/lsjs.aspx?siteid=PQT37489358"></script> -->
+        <!-- <script language="javascript" src="https://pqt.zoosnet.net/js/lsjs.aspx?siteid=PQT37489358"></script> -->
 </body>
 
 </html>

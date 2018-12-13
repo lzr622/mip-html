@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html mip>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -7,8 +8,8 @@
     <link rel="stylesheet" type="text/css" href="https://c.mipcdn.com/static/v1/mip.css">
     <link rel="canonical" href="对应的原页面地址">
     <style mip-custom>
-    /* 用rem  适配 */
-    @media(min-width:640px) {
+        /* 用rem  适配 */
+        @media(min-width:640px) {
             html {
                 font-size: 20px !important
             }
@@ -72,7 +73,7 @@
 
         .header-flex button {
             position: absolute;
-            top: 2.6rem;
+            top: 2rem;
             right: .5rem;
             width: 1.6rem;
             height: 1.2rem;
@@ -166,18 +167,21 @@
         .index-content {
             margin-top: 1rem;
         }
+
         .banner-content {
             margin-top: .5rem;
         }
+
         mip-scrollbox[data-type="row"] {
             padding-left: 3px;
             padding-right: 3px;
         }
-.clear-fix{
-    clear: both;
-}
 
-.bggrey {
+        .clear-fix {
+            clear: both;
+        }
+
+        .bggrey {
             text-align: center;
             background-color: #ddd;
             color: #494949;
@@ -186,110 +190,141 @@
             margin-top: 5rem;
             padding: 3px 0px 5px;
         }
+
         span.cgreen {
-    color: #00cc99
-}
-.fir .title{font-size:24px;color:#333333;font-weight:bold;margin-left:-14px;margin:30px 0px 30px -14px}.fir .xiatou{color:#646464}.fir .wenzhang{color:#646464}.fir .wenzhang .img-tran{margin:25px auto 15px}.fir .wenzhang p{margin:20px 0px}.fir .lianjie{margin:30px 0px 80px}.fir .lianjie div{margin-top:15px}
-    
+            color: #00cc99
+        }
+
+        .fir .title {
+            font-size: 24px;
+            color: #333333;
+            font-weight: bold;
+            margin-left: -14px;
+            margin: 30px 0px 30px -14px
+        }
+
+        .fir .xiatou {
+            color: #646464
+        }
+
+        .fir .wenzhang {
+            color: #646464
+        }
+
+        .fir .wenzhang .img-tran {
+            margin: 25px auto 15px
+        }
+
+        .fir .wenzhang p {
+            margin: 20px 0px;
+            line-height: 25px;
+        }
+
+        .fir .lianjie {
+            margin: 30px 0px 80px
+        }
+
+        .fir .lianjie div {
+            margin-top: 15px
+        }
     </style>
 </head>
+
 <body>
-<!-- 正文 -->
-<div class="header">
-    <div class="header-inner">
-        <div class="header-flex">
-            <a href="index.html" data-type="mip">
-                <mip-img layout="fixed" width="12.5rem" height="3.5rem" src="img/logo.png" alt="MIP LOGO"></mip-img>
-            </a>
-            <button class="header-mobile-nav-toggle" on="tap:right-sidebar.open" role="button">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</div>
-<mip-sidebar id="right-sidebar" layout="nodisplay" class="mip-layout-nodisplay mip-element" side="right">
-    <div class="right-sidebar-nav">
-        <ul class="mobile-nav-list">
-            <li><a data-type="mip" data-title="首页" href="index.html">首页</a></li>
-            <li><a data-type="mip" data-title="产品中心" href="product.html">产品中心</a></li>
-            <li><a data-type="mip" data-title="新闻中心" href="news.html">新闻中心</a></li>
-        </ul>
-    </div>
-</mip-sidebar>
-<!-- /header -->
-<div class="bggrey">新闻中心</div>
-    <!--图片组件-->
-    <div class="banner-content">
-        <mip-carousel layout="responsive" width="500" height="187" indicator buttonController autoplay>
-            <mip-img src="img/news/banner.jpg" alt="banner"></mip-img>
-            <mip-img src="img/news/banner.jpg" alt="banner"></mip-img>
-        </mip-carousel>
-    </div>
-
-    <div class="fir">
-            <div class="container">
-                <div class="title">【星秀场】LUM超细立式磨</div>
-                <div class="xiatou">
-                    <mip-img layout="fixed" width="1.5rem" height="1.5rem" src="./img/news_article/biao.png"></mip-img>
-                    &nbsp;&nbsp;2017/06/12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <mip-img layout="fixed" width="1.5rem" height="1.5rem" src="./img/news_article/shou.png"></mip-img>
-                    &nbsp;&nbsp;368
-                </div>
-                <div class="wenzhang">
-                    <p>历经30多年四代磨机研发制造经验打磨，引进德国超细立磨磨辊技术，LUM超细立式磨突破超细粉加工产能瓶颈，既保留了LM立式磨运行安全、产能高效、使用成本低等诸多优点，又在超细粉碎加工领域拥有独树一帜的优势：能耗、处理效率、使用寿命等方面远高于传统超细磨粉设备，是一款可广泛应用于方解石、大理石、石灰石、重钙、滑石、重晶石、白云石等非金属矿大规模超细干粉加工的国家实用新型专利产品。
-                            
-                            </p>
-                    <p>LUM超细立式磨实现了一次性完成超细粉的粉磨、分级和输送作业，其工艺参数、机械性能和成品粉品质等技术指标被中国机械工业联合会鉴定为“国际先进”水平，斩获“河南省科学技术成果奖”的殊荣。</p>
-                    <img src="./img/news_article/fir.jpg" alt="" class="img-tran">
-                    <p>工艺流程</p>
-                    <p>
-                            经破碎和严格除铁后的原料，经斗式提升机进入原料仓堆放。在事先设定给料量的情况下，定量给料机称量物料并把物料经提升和输送设备喂入LUM超细立式磨机内进行粉磨，在此过程中定量给料机的电脑记录累积给料量，并显示在屏幕上。回转式锁风喂料机可使超细立磨在得到喂料的同时，又避免多余的空气进入磨内。合格成品粉的收集由一台箱式脉冲布袋除尘器完成，减少了设备台数，简化了系统配置。成品粉收集后用螺旋给料机通过其它输送设备送至成品料仓或直接包装。有少量没有得到粉磨的物料，经返料皮带机回到给料机中，重新进入超细立磨进行粉磨。在经过皮带机时，少量的铁会被除铁器吸住，保证了超细立磨的运行安全。</p>
-                    <img src="./img/news_article/sec.jpg" alt="" class="img-tran">
-                    <p></p>
-                </div>
-                <div class="lianjie">
-                        <a href="./news_article.html"><div class="s">下一篇：磨粉生产线详情</div></a> 
-                        <a href="./news_article.html"><div class="x">上一篇：风云三十余载，闪耀华西大区</div></a> 
-                    </div>
+    <!-- 正文 -->
+    <div class="header">
+        <div class="header-inner">
+            <div class="header-flex">
+                <a href="index.html" data-type="mip">
+                    <mip-img layout="fixed" width="12.5rem" height="3.5rem" src="img/logo.png" alt="MIP LOGO"></mip-img>
+                </a>
+                <button class="header-mobile-nav-toggle" on="tap:right-sidebar.open" role="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            
-                
-        </div>    
-
-    
-
-<footer>
-    <div class="index-footer">
-        <div class="index-footer2">
-            <a href="index.html">
-                <mip-img src="img/1.png" width="" height="" alt="">
-                </mip-img>
-                <p>首页</p>
-            </a>
-        </div>
-        <div class="index-footer2">
-            <a href="product.html">
-                <mip-img src="img/2.png" width="" height="" alt="">
-
-                </mip-img>
-                <p>产品中心</p>
-            </a>
-        </div>
-        <div class="index-footer2">
-            <a href="news.html">
-                <mip-img src="img/3.png" width="" height="" alt="">
-
-                </mip-img>
-                <p>新闻中心</p>
-            </a>
         </div>
     </div>
-</footer>
+    <mip-sidebar id="right-sidebar" layout="nodisplay" class="mip-layout-nodisplay mip-element" side="right">
+        <div class="right-sidebar-nav">
+            <ul class="mobile-nav-list">
+                <li><a data-type="mip" data-title="首页" href="index.html">首页</a></li>
+                <li><a data-type="mip" data-title="产品中心" href="product.html">产品中心</a></li>
+                <li><a data-type="mip" data-title="新闻中心" href="news.html">新闻中心</a></li>
+            </ul>
+        </div>
+    </mip-sidebar>
+    <!-- /header -->
+    <div class="bggrey">新闻中心</div>
+    <!--图片组件-->
+    <div class="fir">
+        <div class="container">
+            <div class="title">【星秀场】LUM超细立式磨</div>
+            <div class="xiatou">
+                <mip-img layout="fixed" width="1.5rem" height="1.5rem" src="./img/news_article/biao.png"></mip-img>
+                &nbsp;&nbsp;2017/06/12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <mip-img layout="fixed" width="1.5rem" height="1.5rem" src="./img/news_article/shou.png"></mip-img>
+                &nbsp;&nbsp;368
+            </div>
+            <div class="wenzhang">
+                <p>历经30多年四代磨机研发制造经验打磨，引进德国超细立磨磨辊技术，LUM超细立式磨突破超细粉加工产能瓶颈，既保留了LM立式磨运行安全、产能高效、使用成本低等诸多优点，又在超细粉碎加工领域拥有独树一帜的优势：能耗、处理效率、使用寿命等方面远高于传统超细磨粉设备，是一款可广泛应用于方解石、大理石、石灰石、重钙、滑石、重晶石、白云石等非金属矿大规模超细干粉加工的国家实用新型专利产品。
 
-<script src="https://c.mipcdn.com/static/v1/mip.js"></script>
+                </p>
+                <p>LUM超细立式磨实现了一次性完成超细粉的粉磨、分级和输送作业，其工艺参数、机械性能和成品粉品质等技术指标被中国机械工业联合会鉴定为“国际先进”水平，斩获“河南省科学技术成果奖”的殊荣。</p>
+                <img src="./img/news_article/fir.jpg" alt="" class="img-tran">
+                <p>工艺流程</p>
+                <p>
+                    经破碎和严格除铁后的原料，经斗式提升机进入原料仓堆放。在事先设定给料量的情况下，定量给料机称量物料并把物料经提升和输送设备喂入LUM超细立式磨机内进行粉磨，在此过程中定量给料机的电脑记录累积给料量，并显示在屏幕上。回转式锁风喂料机可使超细立磨在得到喂料的同时，又避免多余的空气进入磨内。合格成品粉的收集由一台箱式脉冲布袋除尘器完成，减少了设备台数，简化了系统配置。成品粉收集后用螺旋给料机通过其它输送设备送至成品料仓或直接包装。有少量没有得到粉磨的物料，经返料皮带机回到给料机中，重新进入超细立磨进行粉磨。在经过皮带机时，少量的铁会被除铁器吸住，保证了超细立磨的运行安全。</p>
+                <img src="./img/news_article/sec.jpg" alt="" class="img-tran">
+                <p></p>
+            </div>
+            <div class="lianjie">
+                <a href="./news_article.html">
+                    <div class="s">下一篇：磨粉生产线详情</div>
+                </a>
+                <a href="./news_article.html">
+                    <div class="x">上一篇：风云三十余载，闪耀华西大区</div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <footer>
+        <div class="index-footer">
+            <div class="index-footer2">
+                <a href="index.html">
+                    <mip-img src="img/1.png" width="" height="" alt="">
+                    </mip-img>
+                    <p>首页</p>
+                </a>
+            </div>
+            <div class="index-footer2">
+                <a href="product.html">
+                    <mip-img src="img/2.png" width="" height="" alt="">
+
+                    </mip-img>
+                    <p>产品中心</p>
+                </a>
+            </div>
+            <div class="index-footer2">
+                <a href="news.html">
+                    <mip-img src="img/3.png" width="" height="" alt="">
+
+                    </mip-img>
+                    <p>新闻中心</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://c.mipcdn.com/static/v1/mip.js"></script>
     <script src="https://c.mipcdn.com/static/v1/mip-sidebar/mip-sidebar.js"></script>
 
 </body>
+
 </html>
